@@ -1,0 +1,209 @@
+/* src/styles/TaskInputForm.css */
+
+/* Error message styling */
+.error, .error-message {
+    color: #d9534f;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Tooltips */
+  .task-form input[title]:hover::after,
+  .task-form textarea[title]:hover::after,
+  .task-form select[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    max-width: 200px;
+    word-wrap: break-word;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    white-space: nowrap;
+  }
+  
+  .task-form input[title]:hover,
+  .task-form textarea[title]:hover,
+  .task-form select[title]:hover {
+    position: relative;
+  }
+  
+  /* General error and success message styling */
+  .error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  /* Task form styling */
+  .task-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .task-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .task-form input[type="text"],
+  .task-form textarea,
+  .task-form input[type="date"],
+  .task-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .task-form input[type="text"]:focus,
+  .task-form textarea:focus,
+  .task-form select:focus,
+  .task-form input[type="date"]:focus {
+    border-color: #6c63ff;
+    outline: none;
+  }
+  
+  .task-form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .task-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c63ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .task-form button:hover {
+    background-color: #5750e3;
+  }
+  
+  .task-form button:focus {
+    outline: none;
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Input/textarea styling */
+  input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .task-form {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .task-form h2 {
+      font-size: 1.25rem;
+    }
+  
+    .task-form input,
+    .task-form textarea,
+    .task-form select {
+      font-size: 0.9rem;
+    }
+  
+    .task-form button {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .task-form {
+      max-width: 95%;
+      padding: 10px;
+    }
+  
+    .task-form h2 {
+      font-size: 1.1rem;
+    }
+  
+    .task-form input,
+    .task-form textarea,
+    .task-form select {
+      font-size: 0.85rem;
+    }
+    /* In TaskInputForm.css */
+
+.loading {
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }  
+  
+    .task-form button {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  }
+  

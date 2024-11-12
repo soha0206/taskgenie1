@@ -1,0 +1,9 @@
+chrome.runtime.onInstalled.addListener(() => {
+  console.log("Extension installed");
+});
+
+chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+  if (tabs[0]) {
+    console.log("Current tab URL:", tabs[0].url);
+  }
+});
